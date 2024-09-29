@@ -1,17 +1,12 @@
 import math
-def calculate_beta(x, y, z):
-    beta = math.sqrt(10 * (math.pow(x, 1/3) + math.pow(x, y + 2))) * (math.asin(z) ** 2 - abs(x - y))
-    return beta
-def main():
-    print("Введите значения для переменных x, y, z:")
-    try:
-        x = float(input("x: "))
-        y = float(input("y: "))
-        z = float(input("z (должен быть в пределах от -1 до 1 для arcsin): "))
-        if z < -1 or z > 1:
-            print("Ошибка: z должен быть в пределах от -1 до 1 для arcsin.")
-            return
-        beta = calculate_beta(x, y, z)
-        print(f"Результат beta: {beta}")
-    except ValueError:
-        print("Ошибка: Пожалуйста, введите числовые значения.")
+x = 2
+y = 3
+z = 0.5
+root_x_3 = math.pow(x, 1 / 3)
+x_pow_y_plus_2 = math.pow(x, y + 2)
+sum_value = root_x_3 + x_pow_y_plus_2
+sqrt_value = math.sqrt(10 * sum_value)
+arcsin_z_squared = math.arcsin(z) ** 2
+absolute_difference = abs(x - y)
+beta = sqrt_value * (arcsin_z_squared - absolute_difference)
+print("beta = ", beta)
