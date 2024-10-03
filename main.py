@@ -4,7 +4,7 @@ import math
 # z = 0.5
 int(input("Введите x: ")
     int(input("Введите y: ")
-        int(input("Введите z: ")
+        double(input("Введите z: ")
 root_x_3 = math.pow(x, 1 / 3)
 x_pow_y_plus_2 = math.pow(x, y + 2)
 sum_value = root_x_3 + x_pow_y_plus_2
