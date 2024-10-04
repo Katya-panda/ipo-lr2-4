@@ -1,5 +1,4 @@
 import math
-from tokenize import Double
 #x = 2
 #y = 3
 #z = 0.5
